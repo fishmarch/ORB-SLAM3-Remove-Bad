@@ -39,12 +39,7 @@ MESSAGE("OPENCV VERSION:")
 MESSAGE(${OpenCV_VERSION})
 
 find_package(Eigen3 3.1.0 REQUIRED)
-SET(Pangolin_DIR "/usr/local/pangolin_orb")
-find_package(Pangolin REQUIRED
-        PATHS /usr/local/pangolin_orb
-        NO_DEFAULT_PATH)
-MESSAGE("Pangolin Path in : ")
-MESSAGE(${Pangolin_DIR})
+find_package(Pangolin REQUIRED)
 find_package(realsense2)
 
 include_directories(
